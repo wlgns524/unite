@@ -1,11 +1,12 @@
 package com.rightcode.unite.Util;
 
 import com.bluelinelabs.logansquare.LoganSquare;
+import com.rightcode.unite.network.typeConverter.RoleConverter;
 
 public class DataEnums {
 
     public void registerTypeConverter() {
-//        LoganSquare.registerTypeConverter(RoleDiff.class, new RoleConverter());
+        LoganSquare.registerTypeConverter(RoleDiff.class, new RoleConverter());
     }
 
     public enum DiffType {
@@ -76,38 +77,6 @@ public class DataEnums {
                 }
             }
             return Student;
-        }
-    }
-
-
-    public enum ProfileImageDiff {
-        GIRAFFE("giraffe"), // - 기린
-        LION("lion"), // - 사자
-        BEAR("bear"), // - 곰
-        ZEBRA("zebra"), // - 얼룩말
-        HIPPO("hippo"), // - 하마
-        ELEPHANT("elephant"), // - 코끼리
-        BASIC("basic"), // - 기본
-        URL(""); // - 선생님
-
-        private String role;
-
-        ProfileImageDiff(String role) {
-            this.role = role;
-        }
-
-        @Override
-        public String toString() {
-            return role;
-        }
-
-        public static ProfileImageDiff getEnum(String value) {
-            for (ProfileImageDiff resultCode : values()) {
-                if (resultCode.toString().equalsIgnoreCase(value)) {
-                    return resultCode;
-                }
-            }
-            return URL;
         }
     }
 }

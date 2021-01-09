@@ -2,7 +2,7 @@ package com.rightcode.unite.network.typeConverter;
 
 
 import com.bluelinelabs.logansquare.typeconverters.StringBasedTypeConverter;
-import com.rightcode.ahmoona.Util.DataEnums;
+import com.rightcode.unite.Util.DataEnums;
 
 public class RoleConverter extends StringBasedTypeConverter<DataEnums.RoleDiff> {
 
