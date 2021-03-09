@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/iv_activity"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        tools:src="@drawable/test_image1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_activity"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="홀멘콜 스키+보드 수리/튜닝센터 이용권
+오크벨리 스키타는 야옹이 렌탈샵"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/ic_rating_star_fill_small"
+                android:drawablePadding="5dp"
+                android:text="5.0"
+                android:textColor="@color/color_f0c200"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/color_cbcbcb_circle2"
+                android:drawablePadding="5dp"
+                tools:text="제주도"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/color_cbcbcb_circle2"
+                android:drawablePadding="5dp"
+                tools:text="어트렉션/공연"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_view"
+                    android:textColor="@color/black"
+                    android:drawablePadding="5dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="31,172원" />
+
+                <TextView
+                    android:id="@+id/tv_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_797979"
+                    android:textSize="12sp"
+                    android:text="31,172원" />
+
+                <TextView
+                    android:id="@+id/tv_price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_797979"
+                    android:textSize="12sp"
+                    android:text="31,172원" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_product_web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="상품확인"
+                android:textColor="@color/white"
+                android:background="@drawable/appcolor_corner8"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

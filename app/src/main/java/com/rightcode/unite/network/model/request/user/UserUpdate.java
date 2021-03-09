@@ -8,24 +8,17 @@ import java.util.List;
 import lombok.Setter;
 
 @JsonObject
+@Setter
 public class UserUpdate {
 
     @JsonField
-    @Setter
-    String password;
+    String gender;
     @JsonField
-    @Setter
-    String firstName;
+    String name;
     @JsonField
-    @Setter
-    String lastName;
-    @JsonField
-    @Setter
-    String nation;
-    @JsonField
-    @Setter
-    String image;
-    @JsonField
-    @Setter
-    List<String> interest;
+    String birthDay;
+//    @JsonField
+//    Boolean eventPush;
+//    @JsonField
+//    Boolean chatPush;
 }

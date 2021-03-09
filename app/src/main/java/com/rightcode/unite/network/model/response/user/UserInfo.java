@@ -3,8 +3,8 @@ package com.rightcode.unite.network.model.response.user;
 import com.bluelinelabs.logansquare.annotation.JsonField;
 import com.bluelinelabs.logansquare.annotation.JsonObject;
 import com.bluelinelabs.logansquare.annotation.OnJsonParseComplete;
-
-import java.util.List;
+import com.rightcode.unite.Util.DataEnums;
+import com.rightcode.unite.network.typeConverter.ProviderConverter;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -15,23 +15,25 @@ import lombok.EqualsAndHashCode;
 public class UserInfo {
 
     @JsonField
-    Integer id;
-    @JsonField
-    String tel;
-    @JsonField
-    String loginId;
-    @JsonField
-    String firstName;
-    @JsonField
-    String lastName;
-    @JsonField
-    String nation;
+    Long id;
+    @JsonField(typeConverter = ProviderConverter.class)
+    DataEnums.Provider provider;
     @JsonField
     String image;
     @JsonField
-    Boolean active;
+    String name;
     @JsonField
-    List<String> interest;
+    String role;
+    @JsonField
+    String gender;
+    @JsonField
+    String birthDay;
+    @JsonField
+    Boolean active;
+//    @JsonField
+//    Boolean eventPush;
+//    @JsonField
+//    Boolean chatPush;
 
     @OnJsonParseComplete
     void OnParseComplete() {

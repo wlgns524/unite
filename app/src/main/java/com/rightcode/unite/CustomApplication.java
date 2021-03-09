@@ -8,6 +8,8 @@ import android.os.Bundle;
 import androidx.multidex.MultiDexApplication;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.FirebaseApp;
+import com.kakao.sdk.common.KakaoSdk;
 import com.rightcode.unite.Util.DataEnums;
 
 
@@ -23,6 +25,7 @@ public class CustomApplication extends MultiDexApplication implements Applicatio
         context = this.getApplicationContext();
         dataEnums = new DataEnums();
         dataEnums.registerTypeConverter();
+        KakaoSdk.init(this, getString(R.string.kakao_key));
     }
 
     @Override

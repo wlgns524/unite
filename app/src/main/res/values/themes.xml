@@ -7,6 +7,16 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="Theme.AppCompat.Translucent">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
     <!-- Dialog -->
     <style name="CommonDialogAnimation">
         <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
@@ -46,5 +56,13 @@
 <!--                <item name="android:transformPivotY">0dp</item>-->
         <item name="colorControlNormal">@color/color_fff9e2</item>
         <item name="colorControlActivated">@color/app_color</item>
+    </style>
+
+    <style name="MySpinnerDatePickerStyle" parent="android:Theme.Material.Dialog">
+        <item name="android:datePickerStyle">@style/MySpinnerDatePicker</item>
+    </style>
+
+    <style name="MySpinnerDatePicker" parent="android:Widget.Material.Light.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
     </style>
 </resources>

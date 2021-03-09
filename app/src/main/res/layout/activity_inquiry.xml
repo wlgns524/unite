@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/top_fragment"
+        android:name="com.rightcode.unite.Fragment.TopFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="TopFragment"
+        tools:layout="@layout/fragment_top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="서비스에 대한 문의 또는 어플리케이션 에러와 관련된
+사항을 자유롭게 문의해주세요."
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/basic_border"
+        android:hint="이메일을 적어주세요."
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="12.5sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/basic_border"
+        android:hint="문의사항 제목을 적어주세요."
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="12.5sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/basic_border_corner5"
+        android:gravity="top"
+        android:hint="서비스에 관한 문의사항을 적어주세요."
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:scrollHorizontally="false"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_inquiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/appcolor_corner8"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="문의하기"
+        android:textColor="@color/white" />
+</LinearLayout>

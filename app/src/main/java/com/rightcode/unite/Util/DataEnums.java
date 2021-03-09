@@ -1,12 +1,14 @@
 package com.rightcode.unite.Util;
 
 import com.bluelinelabs.logansquare.LoganSquare;
+import com.rightcode.unite.network.typeConverter.ProviderConverter;
 import com.rightcode.unite.network.typeConverter.RoleConverter;
 
 public class DataEnums {
 
     public void registerTypeConverter() {
         LoganSquare.registerTypeConverter(RoleDiff.class, new RoleConverter());
+        LoganSquare.registerTypeConverter(Provider.class, new ProviderConverter());
     }
 
     public enum DiffType {
@@ -38,6 +40,24 @@ public class DataEnums {
             return type != null ? type.equals(code.toString()) : false;
         }
     }
+
+    public enum Provider {
+        kakao,
+        naver,
+        facebook,
+        google;
+
+
+        public static Provider getEnum(String value) {
+            for (Provider resultCode : values()) {
+                if (resultCode.toString().equalsIgnoreCase(value)) {
+                    return resultCode;
+                }
+            }
+            return null;
+        }
+    }
+
 
     public enum SMSDiff {
         join, // - 회원가입시

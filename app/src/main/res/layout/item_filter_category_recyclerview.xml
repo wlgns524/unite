@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/selector_f2f3f8_fff9e2_corner8"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="15dp">
+>
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:drawableLeft="@drawable/selector_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="제주도"
+        android:drawablePadding="10dp"
+        android:textColor="@color/selector_797979_f0c200" />
+
+</LinearLayout>

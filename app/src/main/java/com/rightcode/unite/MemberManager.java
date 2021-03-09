@@ -8,8 +8,7 @@ import com.rightcode.unite.RxJava.RxBus;
 import com.rightcode.unite.RxJava.RxEvent.LoginEvent;
 import com.rightcode.unite.Util.GPSUtil;
 import com.rightcode.unite.Util.PreferenceUtil;
-
-import java.util.ArrayList;
+import com.rightcode.unite.network.model.response.user.UserInfo;
 
 public class MemberManager {
     //----------------------------------------------------------------------------------------------
@@ -21,13 +20,14 @@ public class MemberManager {
     // fields
     //----------------------------------------------------------------------------------------------
     private Context context;
+    private UserInfo userInfo;
 
 
     //----------------------------------------------------------------------------------------------
     // get / set
     //----------------------------------------------------------------------------------------------
     public boolean isLogin() {
-        return !ObjectUtils.isEmpty("");
+        return !ObjectUtils.isEmpty(userInfo);
     }
 
     //----------------------------------------------------------------------------------------------
@@ -56,26 +56,24 @@ public class MemberManager {
     // public
     //----------------------------------------------------------------------------------------------
 
-//    public void updateLogInInfo(UserInfo userInfo) {
-//        this.userInfo = userInfo;
-//    }
+    public void updateLogInInfo(UserInfo userInfo) {
+        this.userInfo = userInfo;
+    }
 
-    public void userLogin(String userId, String userPw) {
-        PreferenceUtil.getInstance(context).put(PreferenceUtil.PreferenceKey.UserId, userId);
-        PreferenceUtil.getInstance(context).put(PreferenceUtil.PreferenceKey.UserPw, userPw);
+    public void userLogin() {
         RxBus.send(new LoginEvent(true));
     }
 
     public void userLogout() {
-        PreferenceUtil.getInstance(context).put(PreferenceUtil.PreferenceKey.UserId, "");
-        PreferenceUtil.getInstance(context).put(PreferenceUtil.PreferenceKey.UserPw, "");
+        PreferenceUtil.getInstance(context).put(PreferenceUtil.PreferenceKey.ServiceToken, "");
+        userInfo = null;
         RxBus.send(new LoginEvent(false));
     }
 
 
-//    public UserInfo getUserInfo() {
-//        return userInfo;
-//    }
+    public UserInfo getUserInfo() {
+        return userInfo;
+    }
 
     public Location getLocation() {
         GPSUtil gpsUtil = new GPSUtil(context);

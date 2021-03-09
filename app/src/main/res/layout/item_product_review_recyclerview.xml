@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="10dp">
 
@@ -27,10 +28,11 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
-                android:text="Jinwook"
+                tools:text="Jinwook"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -39,13 +41,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
-                android:text="2020년 2월 9일"
+                tools:text="2020년 2월 9일"
                 android:textColor="@color/text_gray"
                 android:textSize="12sp" />
         </LinearLayout>
     </RelativeLayout>
 
     <com.rightcode.unite.Component.MiddleRatingStarLayout
+        android:id="@+id/rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -54,15 +57,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:text="즐거웠어요!"
+        tools:text="즐거웠어요!"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/tv_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="세계최대 규모 실내 테머파크 치고는 탈만한게 많진 않았지만 망해가는 두바이 경제 덕분에 사람이 없어 줄없이 스릴 넘치는 놀이 기구를 여러번 탈수 있었다. 마치 놀이 공원을 전세낸 기분을 느끼고 싶다면 ㄱ"
+        tools:text="세계최대 규모 실내 테머파크 치고는 탈만한게 많진 않았지만 망해가는 두바이 경제 덕분에 사람이 없어 줄없이 스릴 넘치는 놀이 기구를 여러번 탈수 있었다. 마치 놀이 공원을 전세낸 기분을 느끼고 싶다면 ㄱ"
         android:textColor="@color/text_gray"
         android:textSize="14sp"
         android:textStyle="normal" />

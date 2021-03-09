@@ -9,9 +9,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.rightcode.unite.Adapter.ViewHolder.CommonRecyclerViewHolder;
-import com.rightcode.unite.Adapter.ViewHolder.PopularViewHolder;
 import com.rightcode.unite.Adapter.ViewHolder.ProductReviewViewHolder;
 import com.rightcode.unite.R;
+import com.rightcode.unite.network.model.response.review.Review;
+
+import java.util.ArrayList;
+
+import lombok.Setter;
 
 public class ProductReviewRecyclerViewAdapter extends RecyclerView.Adapter<CommonRecyclerViewHolder> {
 
@@ -23,9 +27,10 @@ public class ProductReviewRecyclerViewAdapter extends RecyclerView.Adapter<Commo
     // fields
     //----------------------------------------------------------------------------------------------
 
+    @Setter
+    private ArrayList<Review> data;
     private Context mContext;
 
-//    List<Integer> arr = Arrays.asList(new Integer[10]);
     //----------------------------------------------------------------------------------------------
     // constructor
     //----------------------------------------------------------------------------------------------
@@ -51,12 +56,16 @@ public class ProductReviewRecyclerViewAdapter extends RecyclerView.Adapter<Commo
 
     @Override
     public void onBindViewHolder(@NonNull CommonRecyclerViewHolder viewHolder, int position) {
-        ((ProductReviewViewHolder) viewHolder).onBind();
+        ((ProductReviewViewHolder) viewHolder).onBind(data.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        if (data != null) {
+            return data.size();
+        } else {
+            return 0;
+        }
     }
 
     //----------------------------------------------------------------------------------------------

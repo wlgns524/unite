@@ -84,7 +84,6 @@ public class TopFragment extends BaseFragment {
         }
     }
 
-
     public void setImagePadding(Menu menu, int padding) {
         float density = getResources().getDisplayMetrics().density;
         int paddingPixel = (int) (padding * density);

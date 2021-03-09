@@ -18,7 +18,7 @@ public class PreferenceUtil {
         ServiceCountry,
         UserId,
         UserPw,
-        ServiceToken
+        ServiceToken,
     }
 
 

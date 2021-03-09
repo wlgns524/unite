@@ -12,7 +12,7 @@ public class LegacyNetworkManager extends AbstractNetworkManager {
     //----------------------------------------------------------------------------------------------
     // fields
     //----------------------------------------------------------------------------------------------
-    private static final String COM_REAL_DOMAIN = "http://52.78.17.40:20010";
+    public static final String COM_REAL_DOMAIN = "http://3.34.82.210:5050";
 
     private static final String COM_QA_DOMAIN = "";
 

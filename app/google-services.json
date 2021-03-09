@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "294660773189",
+    "project_id": "unite-51736",
+    "storage_bucket": "unite-51736.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294660773189:android:b1cb11027f7fba83e11a2c",
+        "android_client_info": {
+          "package_name": "com.rightcode.unite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294660773189-5rkqjq6o64e5uf86c8ck622vhu9jbtic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_mbdLpZYBljZA46IA__Mq-9VByh6nZHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294660773189-5rkqjq6o64e5uf86c8ck622vhu9jbtic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

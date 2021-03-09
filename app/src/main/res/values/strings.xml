@@ -4,6 +4,13 @@
     <!-- keys -->
     <string name="default_notification_channel_id">unite_Notification_Channel_Id</string>
     <string name="default_notification_channel_name">unite_Notification_Channel_Name</string>
+    <string name="kakao_key">42ca25e7641b1538ce3045c97d687bbd</string>
+    <string name="naver_client_id">KcPuKoryeCpF6HkDmJGG</string>
+    <string name="naver_client_secret">JiDdI83KGZ</string>
+    <string name="google_web_client_id">294660773189-5rkqjq6o64e5uf86c8ck622vhu9jbtic.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">434964677633421</string>
+    <string name="fb_login_protocol_scheme">fb434964677633421</string>
+    <string name="google_map_key">AIzaSyCSRZMlU2NbHAHWUSmYhFh44_mQ7qomdWo</string>
 
     <!-- pattern -->
     <string name="pattern_email" translatable="false">^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"+"[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$</string>
@@ -31,8 +38,8 @@
     <string name="network_error_message">네트워크 상태가 원활하지 않습니다.(%1$s)\n3G/4G 또는 WIFI로 네트워크를 전환해 주시기 바랍니다.</string>
 
     <!-- Common Dialog -->
-        <string name="ok">확인</string>
-        <string name="cancel">취소</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
 
 
     <string name="permission_camera_rationale">Access to the camera is needed for detection</string>

@@ -19,3 +19,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# 카카오 로그인
+-keep class com.kakao.sdk.**.model.* { <fields>; }

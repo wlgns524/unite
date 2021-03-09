@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <fragment
+            android:id="@+id/top_fragment"
+            android:name="com.rightcode.unite.Fragment.TopFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="TopFragment"
+            tools:layout="@layout/fragment_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_estherlink_red"
+            android:drawablePadding="3dp"
+            android:padding="10dp"
+            android:text="어느 동행을 선택하시겠어요?"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_partner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_f2f3f8_fff9e2_corner8"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="동행 상품으로"
+                android:textColor="@color/selector_797979_f0c200" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_f2f3f8_fff9e2_corner8"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="지역으로"
+                android:textColor="@color/selector_797979_f0c200" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_estherlink_red"
+                android:drawablePadding="3dp"
+                android:padding="10dp"
+                android:text="동행 상품 검색"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_product_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_f2f3f8_corner14"
+                android:drawableRight="@drawable/ic_gray_search"
+                android:hint="지역,제목,상품명으로 검색하세요"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_gray"
+                android:textSize="12sp"
+                app:autoSizeMaxTextSize="12dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/basic_border_corner8"
+                android:drawableRight="@drawable/ic_arrow_right_circle"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="[반일투어] 방콕 왕궁.에메랄드사원.새벽사원/수상가옥 투어" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_estherlink_red"
+                android:drawablePadding="3dp"
+                android:padding="10dp"
+                android:text="지역 검색"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_f2f3f8_corner14"
+                android:drawableRight="@drawable/ic_gray_search"
+                android:hint="지역,제목,상품명으로 검색하세요"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                app:autoSizeMaxTextSize="12dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_estherlink_red"
+            android:drawablePadding="3dp"
+            android:padding="10dp"
+            android:text="원하는 동행 날짜"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/color_f2f3f8_corner14"
+                android:hint="YYYY - MM - DD"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_gray"
+                android:textSize="12sp"
+                app:autoSizeMaxTextSize="12dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/color_f2f3f8_corner14"
+                android:hint="YYYY - MM - DD"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_gray"
+                android:textSize="12sp"
+                app:autoSizeMaxTextSize="12dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_estherlink_red"
+            android:drawablePadding="3dp"
+            android:padding="10dp"
+            android:text="원하는 동행 성별"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_f2f3f8_fff9e2_corner8"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="무관"
+                android:textColor="@color/selector_797979_f0c200" />
+
+            <TextView
+                android:id="@+id/tv_gender_man"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_f2f3f8_fff9e2_corner8"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="남자만"
+                android:textColor="@color/selector_797979_f0c200" />
+
+
+            <TextView
+                android:id="@+id/tv_gender_woman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_f2f3f8_fff9e2_corner8"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="여자만"
+                android:textColor="@color/selector_797979_f0c200" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_estherlink_red"
+            android:drawablePadding="3dp"
+            android:padding="10dp"
+            android:text="원하는 동행 연령대"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/color_f2f3f8_corner14"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textSize="12sp"
+            app:autoSizeMaxTextSize="12dp"
+            app:autoSizeMinTextSize="8dp"
+            app:autoSizeTextType="uniform" />
+
+        <Spinner
+            android:id="@+id/sn_age"
+            android:background="@drawable/color_f2f3f8_corner14"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_estherlink_red"
+            android:drawablePadding="3dp"
+            android:padding="10dp"
+            android:text="구하는 인원"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_people"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color_f2f3f8_corner14"
+                android:gravity="right"
+                android:hint="숫자만"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                app:autoSizeMaxTextSize="12dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="5dp"
+                android:text="명"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_estherlink_red"
+            android:drawablePadding="3dp"
+            android:padding="10dp"
+            android:text="제목"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/color_f2f3f8_corner14"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            app:autoSizeMaxTextSize="12dp"
+            app:autoSizeMinTextSize="8dp"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_estherlink_red"
+            android:drawablePadding="3dp"
+            android:padding="10dp"
+            android:text="내용"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/color_f2f3f8_corner14"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:scrollHorizontally="false"
+            android:textSize="12sp"
+            app:autoSizeMaxTextSize="12dp"
+            app:autoSizeMinTextSize="8dp"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/appcolor_corner8"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="작성하기"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -12,6 +12,12 @@ public final class MoneyHelper
         return getKor(String.valueOf(paramInt));
     }
 
+    public static String getKor(float paramInt)
+    {
+        return getKor(String.valueOf(paramInt));
+    }
+
+
     public static String getKor(String paramString)
     {
         String str = paramString;

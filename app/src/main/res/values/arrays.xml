@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="markArray10000_2000000">
+        <item>10000</item>
+        <item>2000000 </item>
+    </string-array>
+    <string-array name="markArray0_10000">
+        <item>0</item>
+        <item>10000</item>
+    </string-array>
+</resources>

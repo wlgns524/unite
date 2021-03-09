@@ -4,7 +4,7 @@ package com.rightcode.unite.Util;
 import com.rightcode.unite.Features;
 
 public class Log {
-    private static final String TAG = "rightCode_Tag";
+    private static final String TAG = "rightCode-Tag";
 
     public static void v() {
         if (Features.TEST_ONLY && Features.SHOW_LOG) {
@@ -115,6 +115,12 @@ public class Log {
 
 
     private static String buildMessage(String format, Object... message) {
+//        String html = message.toString();
+//
+//        if (html.length() > 4000) {
+//
+//        } else {
+//    }
         StackTraceElement stackTraceElement = Thread.currentThread().getStackTrace()[4];
         StringBuilder sb = new StringBuilder();
         sb.append("[");
@@ -141,5 +147,18 @@ public class Log {
         }
 
         return sb.toString();
+    }
+
+    public void longMessage(String str) {
+        Log.d(TAG + str.length());
+        int chunkCount = str.length() / 4000;     // integer division
+        for (int i = 0; i <= chunkCount; i++) {
+            int max = 4000 * (i + 1);
+            if (max >= str.length()) {
+                Log.d(str.substring(4000 * i));
+            } else {
+                Log.d(str.substring(4000 * i, max));
+            }
+        }
     }
 }

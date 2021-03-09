@@ -10,21 +10,29 @@
     <color name="background_gray">#fafafa</color>
     <color name="red">#ff0000</color>
     <color name="color_80000000">#80000000</color>
+    <color name="color_80ffffff">#80ffffff</color>
     <color name="color_b7b7b7">#b7b7b7</color>
     <color name="color_d9d9d9">#d9d9d9</color>
     <color name="color_fbf9f9">#fbf9f9</color>
+    <color name="color_9f9f9f">#9f9f9f</color>
+    <color name="color_f1f1f1">#f1f1f1</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
     <color name="color_f0f6fa">#f0f6fa</color>
+    <color name="color_fff7e3">#fff7e3</color>
     <color name="color_f6f6f6">#f6f6f6</color>
     <color name="color_f8dd0a">#f8dd0a</color>
     <color name="color_a8a8a8">#a8a8a8</color>
+    <color name="color_e2e5eb">#e2e5eb</color>
     <color name="color_c5c5c5">#c5c5c5</color>
     <color name="color_1987c2">#1987c2</color>
+    <color name="color_cbcbcb">#cbcbcb</color>
     <color name="color_f2f8fb">#fcf8fb</color>
     <color name="color_f8f8f8">#f8f8f8</color>
     <color name="color_535353">#535353</color>
     <color name="color_f9f9f9">#f9f9f9</color>
     <color name="color_ebebeb">#ebebeb</color>
     <color name="color_ebd92d">#ebd92d</color>
+    <color name="color_f2f3f8">#f2f3f8</color>
     <color name="color_ffdb06">#ffdb06</color>
     <color name="color_ffc058">#ffc058</color>
     <color name="color_fdae0c">#fdae0c</color>
@@ -39,6 +47,7 @@
     <color name="color_9d89bb">#9d89bb</color>
     <color name="color_e3e3e3">#e3e3e3</color>
     <color name="color_c6c6c6">#c6c6c6</color>
+    <color name="color_7ab1e4">#7ab1e4</color>
     <color name="color_cccccc">#cccccc</color>
     <color name="color_727272">#727272</color>
     <color name="color_888888">#888888</color>
@@ -48,6 +57,8 @@
     <color name="color_828282">#828282</color>
     <color name="color_e8fafb">#e8fafb</color>
     <color name="color_ffddda">#ffddda</color>
+    <color name="color_f0c200">#f0c200</color>
+    <color name="color_80f0c200">#80f0c200</color>
     <color name="color_b66660">#b66660</color>
     <color name="color_92a3aa">#92a3aa</color>
     <color name="color_f5f5f5">#f5f5f5</color>
@@ -75,9 +86,13 @@
     <color name="color_7fffffff">#7fffffff</color>
     <color name="color_4d000000">#4d000000</color>
     <color name="color_66ffffff">#66ffffff</color>
+    <color name="color_000000_90">#E6000000</color> <!-- 90% -->
     <color name="color_000000_40">#66000000</color> <!-- 40% -->
+    <color name="color_000000_10">#1a000000</color> <!-- 10% -->
     <color name="color_ffffff_40">#66ffffff</color> <!-- 40% -->
-    <color name="app_color_80">#ccfbbc48</color>
+    <color name="color_kakao">#fbe500</color>
+    <color name="color_naver">#1ec800</color>
+    <color name="color_facebook">#204889</color>
 
     <!--    100% — FF 99% — FC 98% — FA 97% — F7 96% — F5 95% — F2 94% — F0 93% — ED 92% — EB 91% — E8-->
     <!--    90% — E6 89% — E3 88% — E0 87% — DE 86% — DB 85% — D9 84% — D6 83% — D4 82% — D1 81% — CF-->

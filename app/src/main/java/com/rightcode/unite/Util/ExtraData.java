@@ -22,5 +22,20 @@ public class ExtraData {
     public static final String EXTRA_CLASS_RUNNING_TIME = "EXTRA_CLASS_RUNNING_TIME";
     public static final String EXTRA_CLASS_DATE = "EXTRA_CLASS_DATE";
 
+    public static final String EXTRA_PRODUCT_ID = "EXTRA_PRODUCT_ID";
+    public static final String EXTRA_PRODUCT = "EXTRA_PRODUCT";
+    public static final String EXTRA_PRODUCT_IMAGES = "EXTRA_PRODUCT_IMAGES";
+
+    public static final String EXTRA_PARTNER_ID = "EXTRA_PARTNER_ID";
+
+    public static final String EXTRA_NOTICE_ID = "EXTRA_NOTICE_ID";
+
+
+    public static final String EXTRA_PROVIDER = "EXTRA_PROVIDER";
+    public static final String EXTRA_SNS_PK = "EXTRA_SNS_PK";
+
+    public static final String EXTRA_SEARCH_KEYWORD = "EXTRA_SEARCH_KEYWORD";
+
+    public static final String EXTRA_CHATROOM = "EXTRA_CHATROOM";
 }
 

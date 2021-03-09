@@ -7,7 +7,7 @@
     </item>
     <item android:bottom="3dp">
         <shape android:shape="rectangle">
-            <solid android:color="@color/space_color" />
+            <solid android:color="@color/white" />
         </shape>
     </item>
 </layer-list>

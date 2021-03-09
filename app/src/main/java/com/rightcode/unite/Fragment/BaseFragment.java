@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
-import com.rightcode.unite.Activity.BaseActivity;
+import com.rightcode.unite.Activity.Basic.BaseActivity;
 import com.rightcode.unite.Interface.CommonViewInterface;
 import com.rightcode.unite.Util.CommonUtil;
 import com.rightcode.unite.Util.Log;
